@@ -26,7 +26,7 @@ class Operators {
   void runAddition() {
     // OUTPUT: 30
     log('a + b = ${a + b}');
-    // print(a + b);
+    print(a + b);
   }
 
   void runSubtraction() {
@@ -95,13 +95,15 @@ class Operators {
 
   void runAnd() {
     // OUTPUT: false
-    log('a > b && a < b = ${a > b && a < b}');
+    // log('a > b && a < b = ${a > b && a < b}');
+    log('a & b = ${a & b}');
     // print(a > b && a < b);
   }
 
   void runOr() {
     // OUTPUT: true
-    log('a > b || a < b = ${a > b || a < b}');
+    // log('a > b || a < b = ${a > b || a < b}');
+    log('a | b = ${a | b}');
     // print(a > b || a < b);
   }
 
@@ -176,7 +178,7 @@ class ControlFlow {
   // --------------------- Loops --------------------- \\
 
   void runFor() {
-    for (int i = 0; i < 0; i++) {
+    for (int i = 0; i < 10; i++) {
       // OUTPUT: 0 1 2 3 4 5 6 7 8 9
       log('$i');
       // print(i);

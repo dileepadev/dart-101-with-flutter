@@ -180,13 +180,13 @@ class _OperatorsScreenState extends State<OperatorsScreen> {
                 color: Colors.blue.shade800),
           ),
         ]),
-        exampleRunWidget('print(a && b); // false', () {
+        exampleRunWidget('print(a & b); // false', () {
           operations.runAnd();
         }),
-        exampleRunWidget('print(a || b); // true', () {
+        exampleRunWidget('print(a | b); // true', () {
           operations.runOr();
         }),
-        exampleRunWidget('print(!a); // false', () {
+        exampleRunWidget('print!(a > b); // false', () {
           operations.runNot();
         }),
       ],
